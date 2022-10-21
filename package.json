@@ -1,0 +1,20 @@
+{
+  "name": "sign-up-form-project",
+  "version": "1.0.0",
+  "description": "As a learning exercise, this will be a simulation of a sign-up-form to explore how to build a user-friendly form",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manski117/sign-up-form-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manski117/sign-up-form-project/issues"
+  },
+  "homepage": "https://github.com/manski117/sign-up-form-project#readme"
+}
