@@ -4,23 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>this will be a sign up page</h1>
-    <div id="form">
-        <form action="">
-            <fieldset>
-                <legend>form here</legend>
-            
-            <label for="first_name">FIRST NAME</label>
-            <input type="text" id="first_name" minlength="1">
-            <label for="last_name">LAST NAME</label>
-            <input type="text">
-        </fieldset>
-        </form>
-    </div>
+    <main id="main-flexbox" class="container box">
+        <div id="image-flexbox" class="box">
+            <div id="logo">
+                <img class="icon" src="https://picsum.photos/200" alt="This is an image">
+                <p id="icon-text">ODIN</p>
+            </div>
+            <h6 class="credit-text">Photo by XXX</h6>
+            <h6 class="credit-text">@manski117 2022</h6>
+        </div>
+        <div id="form-flexbox" class="box">
+            <div id="header">
+                <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <em>now</em> to get started.</h1><br>
+                <h1>You <em>know</em> you want to.</h1>
+            </div>
+            <div id="form">
+                <form action="">
+                    <fieldset>
+                        <legend>form here</legend>
+                    <h1>Let's do this!</h1>
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" id="first_name" minlength="1">
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text">
+                    <br>
+                    <label for="email">EMAIL</label><input type="text" id="email">
+                    <label for="phone-number">PHONE NUMBER</label><input type="text" id="phone-number">
+                    <br>
+                    <label for="password">PASSWORD</label><input type="text" id="password">
+                    <label for="confirm-password">CONFIRM PASSWORD</label><input type="text" id="confirm-password">
+                </fieldset>
+                </form>
+            </div>
+            <div id="submission">
+                <input type="submit" form="form" value="Create Account">
+                <h3>Already have an account? <a href="https://picsum.photos/200">Log in</a></h3>
+            </div>
+        </div>
+    </main>
 
 </body>
 
