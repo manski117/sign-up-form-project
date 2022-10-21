@@ -22,8 +22,8 @@
                 <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <em>now</em> to get started.</h1><br>
                 <h1>You <em>know</em> you want to.</h1>
             </div>
-            <div id="form">
-                <form action="">
+            <div id="form-div">
+                <form action="http://httpbin.org/post" method="post" id="my-form">
                     <fieldset>
                         <legend>form here</legend>
                     <h1>Let's do this!</h1>
@@ -37,11 +37,12 @@
                     <br>
                     <label for="password">PASSWORD</label><input type="text" id="password">
                     <label for="confirm-password">CONFIRM PASSWORD</label><input type="text" id="confirm-password">
+                      
                 </fieldset>
                 </form>
             </div>
             <div id="submission">
-                <input type="submit" form="form" value="Create Account">
+              <br><button type="submit" form="my-form">Create Account</button>
                 <h3>Already have an account? <a href="https://picsum.photos/200">Log in</a></h3>
             </div>
         </div>
