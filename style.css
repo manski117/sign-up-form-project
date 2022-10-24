@@ -1,7 +1,6 @@
 @font-face{
     font-family: 'Norse Bold';
     src: url("./project-files/Norse-Bold.otf");
-/*This imports a downloaded otf font from our local cpu*/
 }
 
 #main-flexbox{
@@ -50,7 +49,18 @@
 }
 
 h1{
-    color: darkcyan;
+    color: black;
+  font-family: helvetica;
+  font-size: 1rem;
+  margin-left: 15px;
+}
+
+h1.form-headline{
+  margin-left: 0px;
+}
+input, label {
+    display:block;
+/*This allows the labels and input boxes to be on top of each other*/
 }
 
 .box{
