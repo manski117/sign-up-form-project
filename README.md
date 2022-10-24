@@ -9,7 +9,7 @@ In a follow-up project, I will make another sign up page, but for the purpose of
 -improve form ux
 -match font/colors
 -correct form controls
-DONEmake sure submit button actually works
+-DONE make sure submit button actually works
 -make
 *write tests for AND do:* 
 -make form submit and return object

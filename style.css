@@ -1,25 +1,37 @@
+@font-face{
+    font-family: 'Norse Bold';
+    src: url("./project-files/Norse-Bold.otf");
+}
+
 #main-flexbox{
     display: flex;
+    flex-wrap: wrap;
     border-color: blue    !important;
-  width: 100%;
+    width: 100%;
+    position: relative;
     
 }
 
 
 #image-flexbox{
-  width: 300px;
-  max-width: 700px;
-  min-width: 200px;
-  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/NGC_4414_%28NASA-med%29.jpg/1024px-NGC_4414_%28NASA-med%29.jpg) no-repeat center;
+  width: 40%;
+  max-width: 1000px;
+  min-width: 350px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/NGC_4414_%28NASA-med%29.jpg/1024px-NGC_4414_%28NASA-med%29.jpg); 
+  background-position: center;
+/*All code above this is to make the background image more responsive to a changing screen size*/
+  
   postiion: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  
-  
 }
 
+#form-flexbox{
+  width: 59%;
+  min-width: 350px;
+}
 
 #banner{
   background-color: rgba(0,0,0, 0.3);
@@ -48,6 +60,7 @@ h1{
 #icon-text{
     color: white;
     size: 4rem;
+    font-family: 'Norse Bold', Times, serif;
 
 }
 .icon{
