@@ -3,6 +3,15 @@
     src: url("./project-files/Norse-Bold.otf");
 }
 
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url("./project-files/Roboto-Regular.ttf");
+}
+
+body{
+  background-color: #F9F9F9;
+}
+
 #main-flexbox{
     display: flex;
     flex-wrap: wrap;
@@ -58,9 +67,46 @@ h1{
 h1.form-headline{
   margin-left: 0px;
 }
+
+fieldset{
+  border-color: #ccc;
+  border-style: none;
+  box-shadow: 0px 5px 5px 1px #9e9898;
+}
+
 input, label {
     display:block;
 /*This allows the labels and input boxes to be on top of each other*/
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 5px 30px;
+/*padding helps control size of boxes*/
+/*   margin: 8px 0; */
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+label{
+  font-family: 'Roboto-Regular', Arial, Times, serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .15rem;
+    
+}
+.button{
+  width: 200px;
+  background-color: #596D48;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 15px;
 }
 
 .form-line-flex{
@@ -86,6 +132,12 @@ input, label {
 
 }
 
+h3{
+  font-family: 'Roboto-Regular', Arial, Times, serif;
+  color: black;
+  font-size: .8rem;
+  margin-left: 15px;
+}
 
 h6.credit-text{
     font-size: 0.75rem;
@@ -104,10 +156,14 @@ div#footer{
 }
 
 /*Style of normal links for page*/
+a{
+  text-decoration: none;
+}
+
 a:link{ color: blue;}
-a:active { color: blue; }
-a:visited { color: purple; }
-a:hover { color: green; }
+a:active { color: #596D48; }
+a:visited { color: #596D48; }
+a:hover { color: orange; }
 
 /*Style of links on dark bg*/
 a.dark-link:link{ color: white;}
