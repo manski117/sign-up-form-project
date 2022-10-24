@@ -10,7 +10,7 @@ console.log("js linked successfully");
 
 
 function test1(text){
-    text += " and goofy";
+    text += " and googy";
     return text;
 }
 

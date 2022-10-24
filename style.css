@@ -1,6 +1,22 @@
 #main-flexbox{
     display: flex;
+    border-color: blue    !important;
+  width: 100%;
     
+}
+
+
+#image-flexbox{
+  width: 300px;
+  max-width: 700px;
+  min-width: 200px;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/NGC_4414_%28NASA-med%29.jpg/1024px-NGC_4414_%28NASA-med%29.jpg) no-repeat center;
+  
+}
+
+#banner{
+  background-color: rgba(0,0,0, 0.2);
+  
 }
 
 h1{
@@ -12,12 +28,25 @@ h1{
     border-width: 1px;
     border-color:red;
 }
+.flexbox{
+  display: flex;
+}
 
 #icon-text{
     color: red;
     size: 4rem;
 
 }
+.icon{
+  width:50px;
+  height:50px;
+}
+.bg-image{
+  width:100%;
+  height:100%;
+  image-size: cover;
+}
+
 
 h6.credit-text{
     font-size: 1rem;
