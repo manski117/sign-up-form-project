@@ -1,6 +1,7 @@
 @font-face{
     font-family: 'Norse Bold';
     src: url("./project-files/Norse-Bold.otf");
+/*This imports a downloaded otf font from our local cpu*/
 }
 
 #main-flexbox{
@@ -17,6 +18,7 @@
   width: 40%;
   max-width: 1000px;
   min-width: 350px;
+  min-height: 300px;
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/NGC_4414_%28NASA-med%29.jpg/1024px-NGC_4414_%28NASA-med%29.jpg); 
   background-position: center;
 /*All code above this is to make the background image more responsive to a changing screen size*/
@@ -37,9 +39,14 @@
   background-color: rgba(0,0,0, 0.3);
   position: relative;
   width: 100%;
-/*   top: 10%; */
-  
-  
+  height:100px;
+/*  top: 10%; 
+  This will push the image slightly offset of its flow in the flexbox.*/
+}
+
+.icon{
+  height: 6rem;
+  width: 4rem;
 }
 
 h1{
@@ -59,23 +66,14 @@ h1{
 
 #icon-text{
     color: white;
-    size: 4rem;
+    font-size: 4rem;
     font-family: 'Norse Bold', Times, serif;
 
-}
-.icon{
-  width:50px;
-  height:50px;
-}
-.bg-image{
-  width:100%;
-  height:100%;
-  image-size: cover;
 }
 
 
 h6.credit-text{
-    font-size: 0.5rem;
+    font-size: 0.75rem;
     
     color: white;
     font-family: helvetica, san-serif;
@@ -87,8 +85,20 @@ div#footer{
   width: 100%;
   display: flex;
   justify-content: space-around;
-/*   bottom: 0;
-  left: 0;
-  position: absolute; */
+  height: 3rem;
 }
+
+/*Style of normal links for page*/
+a:link{ color: blue;}
+a:active { color: blue; }
+a:visited { color: purple; }
+a:hover { color: green; }
+
+/*Style of links on dark bg*/
+a.dark-link:link{ color: white;}
+a.dark-link:active { color: blue; }
+a.dark-link:visited { color: rgb(204, 204, 0); }
+a.dark-link:hover { color: green; }
+
+
 

@@ -5,12 +5,13 @@ In a follow-up project, I will make another sign up page, but for the purpose of
 
 **////////////Main MVP Needs//////////**
 **TODO**: 
--make image scale
+    -DONE make image scale
 -improve form ux
 -match font/colors
 -correct form controls
--DONE make sure submit button actually works
--make
+    -DONE make sure submit button actually works
+-make icon transparent
+-link github to credits
 *write tests for AND do:* 
 -make form submit and return object
 -make sure passwords match
