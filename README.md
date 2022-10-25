@@ -7,7 +7,7 @@ In a follow-up project, I will make another sign up page, but for the purpose of
 **TODO**: 
     -DONE make image scale
 -improve form ux
--match font/colors
+    -DONE match font/colors
 -correct form controls
     -DONE make sure submit button actually works
     -DONE make icon transparent

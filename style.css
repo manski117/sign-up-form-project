@@ -1,163 +1,143 @@
 @font-face{
-    font-family: 'Norse Bold';
-    src: url("./project-files/Norse-Bold.otf");
+  font-family: 'Norse Bold';
+  src: url("./project-files/Norse-Bold.otf");
 }
 
 @font-face {
-    font-family: 'Roboto-Regular';
-    src: url("./project-files/Roboto-Regular.ttf");
+  font-family: 'Roboto-Regular';
+  src: url("./project-files/Roboto-Regular.ttf");
 }
 
 body{
-  background-color: #F9F9F9;
+background-color: #F9F9F9;
 }
 
 #main-flexbox{
-    display: flex;
-    flex-wrap: wrap;
-    border-color: blue    !important;
-    width: 100%;
-    position: relative;
-    
+  display: flex;
+  flex-wrap: wrap;
+  border-color: blue    !important;
+  width: 100%;
+  position: relative;
+  
 }
 
 
 #image-flexbox{
-  width: 40%;
-  max-width: 1000px;
-  min-width: 350px;
-  min-height: 300px;
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/NGC_4414_%28NASA-med%29.jpg/1024px-NGC_4414_%28NASA-med%29.jpg); 
-  background-position: center;
+width: 40%;
+max-width: 1000px;
+min-width: 350px;
+min-height: 300px;
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/NGC_4414_%28NASA-med%29.jpg/1024px-NGC_4414_%28NASA-med%29.jpg); 
+background-position: center;
 /*All code above this is to make the background image more responsive to a changing screen size*/
-  
-  postiion: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
+
+postiion: relative;
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-direction: column;
 }
 
 #form-flexbox{
-  width: 59%;
-  min-width: 350px;
+width: 59%;
+min-width: 350px;
 }
 
 #banner{
-  background-color: rgba(0,0,0, 0.3);
-  position: relative;
-  width: 100%;
-  height:100px;
+background-color: rgba(0,0,0, 0.3);
+position: relative;
+width: 100%;
+height:100px;
 /*  top: 10%; 
-  This will push the image slightly offset of its flow in the flexbox.*/
+This will push the image slightly offset of its flow in the flexbox.*/
 }
 
 .icon{
-  height: 6rem;
-  width: 4rem;
+height: 6rem;
+width: 4rem;
 }
 
 h1{
-    color: black;
-  font-family: helvetica;
-  font-size: 1rem;
-  margin-left: 15px;
+  color: black;
+font-family: helvetica;
+font-size: 1rem;
+margin-left: 15px;
 }
 
 h1.form-headline{
-  margin-left: 0px;
+margin-left: 0px;
 }
 
 fieldset{
-  border-color: #ccc;
-  border-style: none;
-  box-shadow: 0px 5px 5px 1px #9e9898;
+border-color: #ccc;
+border-style: none;
+box-shadow: 0px 5px 5px 1px #9e9898;
 }
 
-input, label {
-    display:block;
-/*This allows the labels and input boxes to be on top of each other*/
-}
 
-input[type=text], select {
-  width: 100%;
-  padding: 5px 30px;
-/*padding helps control size of boxes*/
-/*   margin: 8px 0; */
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-label{
-  font-family: 'Roboto-Regular', Arial, Times, serif;
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: .15rem;
-    
+  
 }
 .button{
-  width: 200px;
-  background-color: #596D48;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-left: 15px;
+width: 200px;
+background-color: #596D48;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+margin-left: 15px;
 }
 
 .form-line-flex{
-    display: flex;
-    gap: 10%;
+  display: flex;
+  gap: 10%;
 }
 
 .box{
-    border-style: solid;
-    border-width: 1px;
-    border-color:red;
+  border-style: solid;
+  border-width: 1px;
+  border-color:red;
 }
 .flexbox{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 #icon-text{
-    color: white;
-    font-size: 4rem;
-    font-family: 'Norse Bold', Times, serif;
+  color: white;
+  font-size: 4rem;
+  font-family: 'Norse Bold', Times, serif;
 
 }
 
 h3{
-  font-family: 'Roboto-Regular', Arial, Times, serif;
-  color: black;
-  font-size: .8rem;
-  margin-left: 15px;
+font-family: 'Roboto-Regular', Arial, Times, serif;
+color: black;
+font-size: .8rem;
+margin-left: 15px;
 }
 
 h6.credit-text{
-    font-size: 0.75rem;
-    
-    color: white;
-    font-family: helvetica, san-serif;
+  font-size: 0.75rem;
+  
+  color: white;
+  font-family: helvetica, san-serif;
 
 }
 
 div#footer{
-  background-color: rgba(0,0,0,0.3);
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  height: 3rem;
+background-color: rgba(0,0,0,0.3);
+width: 100%;
+display: flex;
+justify-content: space-around;
+height: 3rem;
 }
 
 /*Style of normal links for page*/
 a{
-  text-decoration: none;
+text-decoration: none;
 }
 
 a:link{ color: blue;}
@@ -170,6 +150,33 @@ a.dark-link:link{ color: white;}
 a.dark-link:active { color: blue; }
 a.dark-link:visited { color: rgb(204, 204, 0); }
 a.dark-link:hover { color: green; }
+
+
+/*Form aethstetic stuff*/
+
+input, label {
+  display:block;
+/*This allows the labels and input boxes to be on top of each other*/
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=password], select {
+width: 100%;
+padding: 5px 30px;
+/*padding helps control size of boxes*/
+/*   margin: 8px 0; */
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+color: #666;
+font-family: Helvetica;
+}
+
+label{
+font-family: 'Roboto-Regular', Arial, Times, serif;
+font-size: 10px;
+font-weight: 500;
+letter-spacing: .15rem;
 
 
 
