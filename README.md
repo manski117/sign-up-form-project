@@ -8,10 +8,11 @@ In a follow-up project, I will make another sign up page, but for the purpose of
     -DONE make image scale
 -improve form ux
     -DONE match font/colors
--correct form controls
+    -DONE correct form controls
     -DONE make sure submit button actually works
     -DONE make icon transparent
     -DONE link github to credits
+-how do you automatically add dashes between numbers in input[type="tel"]?
 *write tests for AND do:* 
 -make form submit and return object
 -make sure passwords match

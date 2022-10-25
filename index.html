@@ -35,33 +35,34 @@
                     <div class="form-line-flex">
                         <div class="form-item">
                             <label for="first_name" data-help="What is your first name?">FIRST NAME</label>
-                            <input type="text" id="first_name" placeholder="First Name *" minlength="2" maxlength="250" required>
+                            <input type="text" id="first_name" name="first_name" title="Type your first name here." placeholder="First Name *" minlength="2" maxlength="250" required>
                         </div>
                         <div class="form-item">
                             <label for="last_name" data-help="What is your last name?">LAST NAME</label>
-                            <input type="text" id="last_name" placeholder="Last Name *" minlength="2" maxlength="250" required>
+                            <input type="text" id="last_name" name="last_name" title="Type your last name here."placeholder="Last Name *" minlength="2" maxlength="250" required>
                         </div>
                     </div>
                     <br>
                     <div class="form-line-flex">
                         <div class="form-item">
-                            <label for="email" data-help="Format: email@email.com">EMAIL</label>
-                            <input type="email" id="email" maxlength="100" placeholder="Email" required>
+                            <label for="email" data-help"Format: email@email.com">EMAIL</label>
+                            <input type="email" id="email" maxlength="100" name="user_email" title="email here. Remember to use 'email@url.com' format" placeholder="Email *" required>
                         </div>
                         <div class="form-item">
                             <label for="phone-number" data-help="Numbers only: XXXXXXXXXX">PHONE NUMBER</label>
-                            <input type="tel" id="phone-number" placeholder="Phone #" minlength="9" maxlength="12" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                            <input type="tel" id="phone-number" name="user_phone_number" title="Phone number here. There must be dashes between the letters. Example: XXX-XXX-XXXX"placeholder="Phone #" minlength="9" maxlength="12" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> 
+<!--The pattern attribute in the phone number input currently demands that there must be dashes between the numbers-->
                         </div>
                     </div>
                     <br>
                     <div class="form-line-flex">
                         <div class="form-item">
                             <label for="password" data-help="XXXXX">PASSWORD</label>
-                            <input type="password" id="password" required>
+                            <input type="password" id="password" placeholder="type password here" required>
                         </div>
                         <div class="form-item">
                             <label for="confirm-password" data-help="please make sure both passwords match!">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm-password">
+                            <input type="password" placeholder="make sure both match" id="confirm-password" required>
                         </div>
                     </div>
                       
