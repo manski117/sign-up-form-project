@@ -1,3 +1,4 @@
+/*Custom fonts*/
 @font-face{
   font-family: 'Norse Bold';
   src: url("./project-files/Norse-Bold.otf");
@@ -8,6 +9,8 @@
   src: url("./project-files/Roboto-Regular.ttf");
 }
 
+
+/*Layout stuff*/
 body{
 background-color: #F9F9F9;
 }
@@ -155,6 +158,7 @@ a.dark-link:hover { color: green; }
 font-family: customFontBold;
 font-size: .7rem;
 color: rgb(255, 69, 100);
+max-width: 200px;
 
 }
 

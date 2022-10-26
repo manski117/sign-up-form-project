@@ -14,14 +14,9 @@ In a follow-up project, I will make another sign up page, but for the purpose of
     -DONE link github to credits
     -DONE how do you automatically add dashes between -DONE numbers in input[type="tel"]?
     -DONE how to make detailed reminders appear below form input
-*write tests for AND do:* 
--make form submit and return object
--make sure passwords match
--regex for phone number js
-*tests written, just need to do:*
 
 **//////////Future Features Planned//////////**
-NA
+Make a new and improved sign up page that can comm with back end
 
 
 
