@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main id="main-flexbox" class="container box">
+    <main id="main-flexbox" class="container">
         <div id="image-flexbox">
           <div></div>
               <span id="banner" class="flexbox">
@@ -22,7 +22,7 @@
                 <h6 class="credit-text"><a href="https://github.com/manski117" class="dark-link">@manski117 2022</a></h6>
             </div>
         </div>
-        <div id="form-flexbox" class="box">
+        <div id="form-flexbox">
             <div id="header">
                 <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <em>now</em> to get started.</h1><br>
                 <h1>You <em>know</em> you want to.</h1>
@@ -51,18 +51,37 @@
                         <div class="form-item">
                             <label for="phone-number" data-help="Numbers only: XXXXXXXXXX">PHONE NUMBER</label>
                             <input type="tel" id="phone-number" name="user_phone_number" title="Phone number here. There must be dashes between the letters. Example: XXX-XXX-XXXX"placeholder="Phone #" minlength="9" maxlength="12" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> 
-<!--The pattern attribute in the phone number input currently demands that there must be dashes between the numbers-->
+<!--The pattern attribute in the phone number input currently demands that 
+there must be dashes between the numbers. The tele.addEventListener 
+function in main.js currently makes this easy for the user by inserting 
+the '-' for them.-->
                         </div>
                     </div>
                     <br>
                     <div class="form-line-flex">
                         <div class="form-item">
-                            <label for="password" data-help="XXXXX">PASSWORD</label>
-                            <input type="password" id="password" placeholder="type password here" required>
+                            <label for="password" data-help="8 characters, at least one number, capital, and lower case letter">PASSWORD</label>
+                            <input type="password" 
+                                   id="password" 
+                                   class="error" 
+                                   placeholder="type password here" 
+                                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                   required>
+<!--Pattern RegEx states that password should have at least one capital letter, one number, and one lowercase letter, and be at least 8 characters long. -->
+                          <div id='password-error' class='error'></div>
+
+<!--The empty div#password-error is a placeholder to recieve user feedback from JS about what the content of their passwords is missing-->
                         </div>
                         <div class="form-item">
                             <label for="confirm-password" data-help="please make sure both passwords match!">CONFIRM PASSWORD</label>
-                            <input type="password" placeholder="make sure both match" id="confirm-password" required>
+                            <input type="password" 
+                                   placeholder="make sure both passwords match" 
+                                   id="confirm-password" 
+                                   class="error" 
+                                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                   required>
+                          <div id='confirm-password-error' class='error'></div>
+
                         </div>
                     </div>
                       
@@ -70,7 +89,7 @@
                 </form>
             </div>
             <div id="submission">
-              <br><button class="button" type="submit" form="my-form">Create Account</button>
+              <br><button class="submitButton" roll="button" type="submit" form="my-form">Create Account</button>
                 <h3>Already have an account? <a href="https://picsum.photos/200">Log in</a></h3>
             </div>
         </div>

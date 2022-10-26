@@ -12,7 +12,8 @@ In a follow-up project, I will make another sign up page, but for the purpose of
     -DONE make sure submit button actually works
     -DONE make icon transparent
     -DONE link github to credits
-    -DONE how do you automatically add dashes between numbers in input[type="tel"]?
+    -DONE how do you automatically add dashes between -DONE numbers in input[type="tel"]?
+    -DONE how to make detailed reminders appear below form input
 *write tests for AND do:* 
 -make form submit and return object
 -make sure passwords match

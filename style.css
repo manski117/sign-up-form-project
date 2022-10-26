@@ -73,13 +73,11 @@ border-color: #ccc;
 border-style: none;
 box-shadow: 0px 5px 5px 1px #9e9898;
 }
-
-
   
-}
-.button{
-width: 200px;
-background-color: red;
+
+.submitButton{
+width: 200px ;
+background-color: #596D48;
 color: white;
 padding: 14px 20px;
 margin: 8px 0;
@@ -140,7 +138,7 @@ a{
 text-decoration: none;
 }
 
-a:link{ color: blue;}
+a:link{ color: #596D48;}
 a:active { color: #596D48; }
 a:visited { color: #596D48; }
 a:hover { color: orange; }
@@ -153,6 +151,12 @@ a.dark-link:hover { color: green; }
 
 
 /*Form aethstetic stuff*/
+.error {
+font-family: customFontBold;
+font-size: .7rem;
+color: rgb(255, 69, 100);
+
+}
 
 input, label {
   display:block;
